@@ -5,3 +5,7 @@ Currently looks worse than normal vim
 
 
 ![image](https://user-images.githubusercontent.com/26660036/65378714-362f5e80-dc71-11e9-826a-7ed020721c38.png)
+
+
+#### Writing comments and documentation
+From [NSHipster](https://nshipster.com/swift-documentation/)
