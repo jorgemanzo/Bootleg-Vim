@@ -12,6 +12,7 @@
 		813171032335D5540084DCF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813171022335D5540084DCF5 /* Assets.xcassets */; };
 		813171062335D5540084DCF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813171042335D5540084DCF5 /* Main.storyboard */; };
 		8131710F2335D5E90084DCF5 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8131710E2335D5E90084DCF5 /* TextView.swift */; };
+		81F6B2492336C03E006E86F6 /* EditorModeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F6B2482336C03E006E86F6 /* EditorModeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		813171072335D5540084DCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		813171082335D5540084DCF5 /* Bootleg_Vim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bootleg_Vim.entitlements; sourceTree = "<group>"; };
 		8131710E2335D5E90084DCF5 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		81F6B2482336C03E006E86F6 /* EditorModeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorModeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				813170FE2335D5530084DCF5 /* AppDelegate.swift */,
-				813171002335D5530084DCF5 /* ViewController.swift */,
+				81F6B2482336C03E006E86F6 /* EditorModeManager.swift */,
 				8131710E2335D5E90084DCF5 /* TextView.swift */,
+				813171002335D5530084DCF5 /* ViewController.swift */,
 				813171022335D5540084DCF5 /* Assets.xcassets */,
 				813171042335D5540084DCF5 /* Main.storyboard */,
 				813171072335D5540084DCF5 /* Info.plist */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8131710F2335D5E90084DCF5 /* TextView.swift in Sources */,
+				81F6B2492336C03E006E86F6 /* EditorModeManager.swift in Sources */,
 				813171012335D5530084DCF5 /* ViewController.swift in Sources */,
 				813170FF2335D5530084DCF5 /* AppDelegate.swift in Sources */,
 			);

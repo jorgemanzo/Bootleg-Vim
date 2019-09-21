@@ -13,14 +13,29 @@ import Cocoa
 */
 class TextView: NSTextView, NSTextViewDelegate {
 	
+	/// Represents the current mode of the text editor
+	public let editorModeManager = EditorModeManager()
+	
 	// MARK: How we detect regular keys and numbers
 	func textView(_ textView: NSTextView, shouldChangeTextIn affectedCharRange: NSRange, replacementString: String?) -> Bool {
-		print(replacementString ?? "Replacement String was empty")
-		return true
+		let currentMode: String = editorModeManager.getCurrentMode()
+		let pressedKey: String = replacementString ?? ""
+		print(pressedKey)
+		if currentMode == EditorModeManager.INSERT_MODE {
+			return true
+		}
+		if currentMode == EditorModeManager.NORMAL_MODE {
+			if pressedKey == "i" {
+				editorModeManager.changeMode(changeModeTo: EditorModeManager.INSERT_MODE)
+			}
+		}
+		return false
 	}
 	
 	// MARK: How we detect escape key pressed
 	override func cancelOperation(_ sender: Any?) {
-		print(sender ?? "No sender in cancel operation, or escape key was pressed")
+		
+		// Since escape was pressed, change to normal mode
+		editorModeManager.changeMode(changeModeTo: EditorModeManager.NORMAL_MODE)
 	}
 }

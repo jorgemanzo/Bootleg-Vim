@@ -16,6 +16,10 @@ class ViewController: NSViewController {
 
 		// Do any additional setup after loading the view.
 		textView.delegate = textView
+		textView.editorModeManager.delegate = self
+		
+		// Set the editor into normal mode
+		textView.editorModeManager.changeMode(changeModeTo: EditorModeManager.NORMAL_MODE)
 	}
 
 	override var representedObject: Any? {
@@ -27,3 +31,8 @@ class ViewController: NSViewController {
 
 }
 
+extension ViewController: NotifyEditorDelegate {
+	func onModeChange(modeWasChangedTo newMode: String) {
+		modeLabel.stringValue = newMode
+	}
+}
