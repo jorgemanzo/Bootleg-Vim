@@ -9,11 +9,13 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+	@IBOutlet var textView: TextView!
+	@IBOutlet var modeLabel: NSTextField!
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
 		// Do any additional setup after loading the view.
+		textView.delegate = textView
 	}
 
 	override var representedObject: Any? {
