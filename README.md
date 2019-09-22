@@ -4,7 +4,7 @@
 Currently looks worse than normal vim
 
 
-![image](https://user-images.githubusercontent.com/26660036/65378714-362f5e80-dc71-11e9-826a-7ed020721c38.png)
+![bootlegVimDemo](https://user-images.githubusercontent.com/26660036/65380462-46573600-dc91-11e9-99af-72ddcc3c7b2a.gif)
 
 
 #### Writing comments and documentation
